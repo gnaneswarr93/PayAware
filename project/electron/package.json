@@ -1,0 +1,56 @@
+{
+  "name": "payaware-electron",
+  "version": "1.0.0",
+  "description": "PayAware Desktop Companion - Auto-detect financial transactions",
+  "main": "main.js",
+  "author": "PayAware Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.payaware.desktop",
+    "productName": "PayAware Desktop",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "main.js",
+      "messageParser.js",
+      "autoCategorizer.js",
+      "**/dist/**/*",
+      "!**/node_modules/*/src/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.finance",
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png",
+      "category": "Office"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  }
+}

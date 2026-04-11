@@ -1,0 +1,10 @@
+
+export const debugEnvironment = () => {
+    console.group('--- Environment Debug ---');
+    console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL);
+    console.log('VITE_SUPABASE_ANON_KEY:', import.meta.env.VITE_SUPABASE_ANON_KEY ? '(Set)' : '(Missing)');
+    console.log('MODE:', import.meta.env.MODE);
+    console.log('DEV:', import.meta.env.DEV);
+    console.log('PROD:', import.meta.env.PROD);
+    console.groupEnd();
+  };

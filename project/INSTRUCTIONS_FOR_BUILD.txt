@@ -1,0 +1,27 @@
+IMPORTANT INSTRUCTIONS FOR BUILDING THE APP
+
+1. SETUP ENVIRONMENT
+   - Unzip the project.
+   - You need 'Node.js' and 'Android Studio' installed.
+   - Open a terminal/command prompt inside the 'project' folder.
+   - Run: npm install
+
+2. CONFIGURE CONNECTION (CRITICAL)
+   - Open the file named '.env' in the 'project' folder.
+   - Add or Update the line:
+     VITE_API_URL=http://<IP_ADDRESS_OF_SERVER_LAPTOP>:8000
+   
+   (Replace <IP_ADDRESS_OF_SERVER_LAPTOP> with the IP address of the laptop running the Python Backend.
+    Example: VITE_API_URL=http://192.168.1.10:8000)
+
+   *NOTE: Both laptops/phones must be on the SAME Wi-Fi network.*
+
+3. BUILD ANDROID APP
+   - In the terminal, run: npx cap sync android
+   - Then run: npx cap open android
+   - Android Studio will open. Wait for it to sync Gradle.
+   - Connect your Android Phone via USB (Enable USB Debugging).
+   - Click the Green Play Button to install the app.
+
+4. PERMISSIONS
+   - When the app opens, Allow SMS permissions to test the Transaction Detection.

@@ -1,0 +1,89 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+.vite/
+
+# Environment variables (IMPORTANT - contains secrets!)
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Capacitor
+android/build/
+android/.gradle/
+android/local.properties
+ios/App/build/
+ios/App/Pods/
+ios/App/Podfile.lock
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# Supabase (if you have local config)
+supabase/.branches/
+supabase/.temp/
+
+# Machine Learning Models (large files)
+# *.pkl
+*.h5
+*.pth
+*.onnx
+
+# CSV data files (if they contain sensitive data)
+# *.csv
+
+# Secrets (CRITICAL!)
+*secret*
+*password*
+*credentials*
+
+# Electron
+electron/out/
+electron/dist/
+
+# Misc
+.eslintcache
+*.tsbuildinfo

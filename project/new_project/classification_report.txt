@@ -1,0 +1,38 @@
+                                      precision    recall  f1-score   support
+
+        Expense__Charity & Donations       1.00      1.00      1.00       300
+      Expense__Childcare & Education       1.00      0.67      0.80       300
+              Expense__Debt Payments       1.00      1.00      1.00       300
+                  Expense__Education       0.99      0.72      0.83       300
+              Expense__Entertainment       0.87      0.82      0.84       300
+              Expense__Food & Dining       0.36      0.99      0.53       300
+                  Expense__Groceries       1.00      0.73      0.85       300
+                 Expense__Healthcare       1.00      0.84      0.91       300
+           Expense__Home Maintenance       1.00      1.00      1.00       300
+        Expense__Housing & Utilities       1.00      0.83      0.91       300
+                  Expense__Insurance       1.00      1.00      1.00       300
+     Expense__Legal & Administrative       1.00      1.00      1.00       300
+              Expense__Miscellaneous       1.00      1.00      1.00       300
+              Expense__Personal Care       0.94      0.87      0.90       300
+                       Expense__Pets       1.00      0.83      0.91       300
+   Expense__Professional Development       1.00      0.80      0.89       300
+      Expense__Savings & Investments       1.00      1.00      1.00       300
+                   Expense__Shopping       0.95      0.94      0.95       300
+Expense__Subscriptions & Memberships       0.85      0.99      0.92       300
+                      Expense__Taxes       1.00      1.00      1.00       300
+             Expense__Transportation       0.81      0.89      0.85       300
+         Expense__Travel & Vacations       1.00      1.00      1.00       300
+        Income__Business & Freelance       1.00      1.00      1.00       300
+        Income__Government Transfers       1.00      1.00      1.00       300
+          Income__Investment Returns       1.00      0.96      0.98       300
+               Income__Miscellaneous       1.00      0.96      0.98       300
+               Income__Rental Income       1.00      0.95      0.97       300
+              Income__Salary & Wages       0.99      0.97      0.98       300
+              Loan__Credit Card Dues       1.00      0.84      0.92       300
+Loan__Disbursement (Amount Borrowed)       1.00      1.00      1.00       300
+              Loan__Interest Payment       1.00      1.00      1.00       300
+               Loan__Repayment (EMI)       1.00      1.00      1.00       300
+
+                            accuracy                           0.93      9600
+                           macro avg       0.96      0.93      0.93      9600
+                        weighted avg       0.96      0.93      0.93      9600
